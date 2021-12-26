@@ -1,0 +1,105 @@
+@font-face {
+    font-family: "Primary";
+    src: url("../fonts/jaapokki/jaapokkisubtract-regular.eot");
+    src: url("../fonts/jaapokki/jaapokkisubtract-regular.woff") format("woff"), url("../fonts/jaapokki/jaapokkisubtract-regular.ttf") format("truetype"), url("../fonts/jaapokki/jaapokkisubtract-regular.svg#filename") format("svg");
+}
+
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
+
+/* Header */
+
+.large-header {
+    position: relative;
+    width: 100%;
+    background: #333;
+    overflow: hidden;
+    background-size: cover;
+    background-position: center center;
+    z-index: 1;
+}
+
+.introAnimation .large-header {
+    margin-bottom: 5em;
+    background: #FFFFFF;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #efedeb, #FFFFFF);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #efedeb, #FFFFFF);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    /*background-image: url('../img/demo-1-bg.jpg');*/
+}
+.main-title {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+}
+
+.main-title picture img {
+    width: 60%;
+}
+div.main-title h3 {
+    font-family: 'Primary', Moderne Sans, sans-serif;
+    text-transform: uppercase;
+    color: #031926;
+    font-size: 4.2em;
+    margin-bottom: 3px;
+}
+div.main-title h4 {
+    font-family: 'Primary', Moderne Sans, sans-serif;
+    text-transform: uppercase;
+    color: #031926;
+    font-size: 2.2em;
+    margin-bottom: 3px;
+}
+div.main-title p {
+    font-family: 'Open Sans', sans-serif;
+    letter-spacing: 0.6em;
+    color: #122C34;
+    padding: 0px 0px 10px 10px;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+.main-title .thin {
+    font-weight: 200;
+}
+
+
+
+@media only screen and (max-width: 85em) {
+    .main-title {
+        width:80%;
+    }
+
+    .main-title picture img {
+        width: 45%;
+    }
+
+    div.main-title h3 {
+        font-size: 3em;
+        margin: 15px 0 15px 0;
+    }
+
+    div.main-title p {
+        
+    letter-spacing: 0.2em;
+    }
+    
+    .introAnimation .main-title {
+        font-size: 1em;
+    }
+}
+
+
+@media only screen and (max-width: 35em) {
+
+    .main-title picture img {
+        width: 65%;
+    }
+}
+
